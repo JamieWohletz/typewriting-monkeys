@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Typewriting Monkeys</title>
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+  <main class="centered">
+    <h1>Typewriting Monkeys</h1>
+    <div><img class="monkey-img" src="/images/typewriting-monkey.jpg" alt="Typewriting Monkey"/></div>
+    <form>
+      <label for="line-count">How many lines long should the poem be?</label><br/>
+      <input id="line-count" class="line-count" name="lineCount" type="number" max="100" min="1" value="<%= lineCount %>"/><br/>
+      <button class="generate-button">Generate!</button>
+    </form>
+    <div class="poem"><%= poem %></div>
+  </main>
+  </body>
+</html>
